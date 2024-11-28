@@ -10,7 +10,7 @@ typedef NTSTATUS(NTAPI* _NtLoadDriver)(PUNICODE_STRING DriverServiceName);
 
 static _NtLoadDriver NtLoadDriver = NULL;
 
-static bool GrantPrivilege(LPCTSTR privilege)
+static bool GrantPrivilege(LPCTSTR Privilege)
 {
 	HANDLE Token;
 	TOKEN_PRIVILEGES TokenPrivileges;
